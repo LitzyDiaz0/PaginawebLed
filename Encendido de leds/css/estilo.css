@@ -1,0 +1,69 @@
+.titulo{
+    font-size: 70px;
+    font-family:  sans-serif;
+    font-family: 'Noto Serif', serif;
+    font-weight: bold; 
+}
+
+#rosa{
+   padding-left: 50px;
+    padding-right: 50px; 
+    background-color: rgba(42, 42, 42, 0.907)
+}
+
+#input{
+    margin-top: 30px;
+}
+
+#detener{
+    padding-left: 20px;
+}
+
+.fondo{
+background: linear-gradient(to right,rgba(239, 175, 241, 0.773),rgba(151, 229, 218, 0.762)), url(../img/M0Yy.gif);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+padding-left: 10px;
+padding-bottom: 10px;
+}
+
+#contenido{
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 20px;
+    margin-top: 50px;
+}
+
+p {
+    font-weight: bold;
+    animation-duration: 3s;
+    animation-name: slidein;
+    background-color: rgba(252, 217, 229, 0.815);
+   /* animation-iteration-count: infinite; */
+   
+  }
+  .sec {
+    font-weight: bold;
+    animation-duration: 3s;
+    animation-name: slidein;
+    background-color: rgba(202, 248, 134, 0.815);
+    animation-iteration-count: infinite; 
+    animation-direction: alternate;
+   
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  .detener{
+    background-color: blue;
+  }

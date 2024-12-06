@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- links tipografia-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Crimson+Text&family=Dancing+Script:wght@500&family=Noto+Sans+Wancho&family=Noto+Serif&display=swap" rel="stylesheet">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Crimson+Text&family=Dancing+Script:wght@500&family=Noto+Sans+Wancho&family=Noto+Serif&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<link rel="stylesheet" href="css/estilo.css">
+    <title>Examen Segundo Parcial</title>
+    
+</head>
+<body class="fondo">
+    
+<div class="container text-center" id="contenido">
+    <div class="row" >
+        <div class="col-12" >         
+            <hr class="border border-info border-3 opacity-50">
+            <marquee behavior="alternate" ><h1 class="titulo" >Secuencia de leds y animaciónes</h1></marquee> 
+            <hr class="border border-dark border-4 opacity-75">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-2" style="background-color: rgb(127, 212, 255);">
+            <br>
+            <div class="col-3" style="background-color: rgb(127, 212, 255);">
+                <label class="sec">Animaciónes:</label> 
+            </div>
+            <button type="button" id="animacion1" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title=" Encender uno por uno">
+                Animacion 1
+            </button><br><br>
+            <button type="button" id="animacion2" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Encendido y apagado">
+            Animacion 2
+            </button><br><br>
+            <button type="button" id="animacion3" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Uno si y uno no">
+            Animacion 3
+            </button><br><br>
+            <button type="button" id="animacion4" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Uno no y uno si">
+                Animacion 4
+                </button><br><br>
+                <button type="button" id="animacion5" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Encender y apagar uno a uno">
+                Animacion 5
+                </button><br><br>
+        </div>
+
+        <div class="col-10" id="rosa">
+            <br>
+                <p>Secuencias</p> 
+            
+            <div class="row" >
+                <div class="col-12" style="background-color: rgb(255, 255, 255);  padding-top: 10px;">
+                    <img style="width: 100px; height: 110px;" id="cambio" src="img/apagado.png" alt="">
+                    <img style="width: 100px; height: 110px;" id="cambio2" src="img/apagado.png" alt="">
+                    <img style="width: 100px; height: 110px;" id="cambio3" src="img/apagado.png" alt="">
+                    <img style="width: 100px; height: 110px;" id="cambio4" src="img/apagado.png" alt="">
+                    <img style="width: 100px; height: 110px;" id="cambio5" src="img/apagado.png" alt="">
+                    <img style="width: 100px; height: 110px;" id="cambio6" src="img/apagado.png" alt="">
+                    <img style="width: 100px; height: 110px;" id="cambio7" src="img/apagado.png" alt="">
+                    <img style="width: 100px; height: 110px;" id="cambio8" src="img/apagado.png" alt="">
+                </div>
+            </div>
+
+          
+           <div class="row">
+           
+                <div class="col-6" id="input">
+                    
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Ingresa un número" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-info" type="button" id="button-addon2"  data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="convertiras ese numero a binario">Enviar</button>
+                </div>   
+            </div>  
+
+            
+
+                    <div class="col-3" id="input">
+                    <button type="button" onclick="detener()" id="detener" class="btn  btn-light" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Detener la secuencia">
+                        Parar
+                      </button>
+                  </div>
+                
+                  
+              
+            </div>
+
+            <div class="col-3">
+                <br>
+                
+
+            </div>
+        </div>
+
+        </div>
+
+    </div>
+
+
+
+
+</div>
+</div>
+
+
+
+
+
+     <!-- jquery -->
+     <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+     integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+ <!-- bootstrap -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+     crossorigin="anonymous"></script>
+ <!-- native javascript -->
+ <script src="js/examen.js"></script>
+</body>
+</html>
